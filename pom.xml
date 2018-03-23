@@ -5,7 +5,7 @@
   <name>springboot-testcontainer-rabbitmq</name>
   <description>RabbitMQ test-container</description>
   <url>https://github.com/springboot-testcontainer/springboot-testcontainer-rabbitmq</url>
-  <version>0.1.0-RC1</version>
+  <version>0.1.0-RC2</version>
 
   <properties>
     <!-- System -->
