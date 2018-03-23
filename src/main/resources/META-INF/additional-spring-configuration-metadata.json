@@ -2,43 +2,43 @@
 	"groups": [],
 	"properties": [
 		{
-			"name": "embedded.rabbitmq.enabled",
+			"name": "embedded.container.rabbitmq.enabled",
 			"type": "java.lang.Boolean",
 			"description": "Enables/Disables container startup.",
 			"defaultValue": "true"
 		},
 		{
-			"name": "embedded.rabbitmq.startup-timeout",
-			"description": "Time to wait for a sucessful started container",
+			"name": "embedded.container.rabbitmq.startup-timeout",
+			"description": "Max time to wait for a successfully started container",
 			"type": "java.lang.Integer",
 			"defaultValue": "30"
 		},
 		{
-			"name": "embedded.rabbitmq.docker-image",
+			"name": "embedded.container.rabbitmq.docker-image",
 			"type": "java.lang.String",
 			"description": "Docker-image",
 			"defaultValue": "rabbitmq:3.7.4-alpine"
 		},
 		{
-			"name": "embedded.rabbitmq.port",
+			"name": "embedded.container.rabbitmq.port",
 			"description": "AMQP-Port",
 			"type": "java.lang.Integer",
 			"defaultValue": "5672"
 		},
 		{
-			"name": "embedded.rabbitmq.virtual-host",
+			"name": "embedded.container.rabbitmq.virtual-host",
 			"type": "java.lang.String",
 			"description": "Virtual-host",
 			"defaultValue": "/"
 		},
 		{
-			"name": "embedded.rabbitmq.username",
+			"name": "embedded.container.rabbitmq.username",
 			"type": "java.lang.String",
 			"description": "Username",
 			"defaultValue": "guest"
 		},
 		{
-			"name": "embedded.rabbitmq.password",
+			"name": "embedded.container.rabbitmq.password",
 			"type": "java.lang.String",
 			"description": "Password",
 			"defaultValue": "guest"
