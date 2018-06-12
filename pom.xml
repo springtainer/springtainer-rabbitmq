@@ -5,7 +5,7 @@
   <name>springboot-testcontainer-rabbitmq</name>
   <description>RabbitMQ test-container</description>
   <url>https://github.com/springboot-testcontainer/springboot-testcontainer-rabbitmq</url>
-  <version>0.1.0-RC5</version>
+  <version>0.1.0-RC6</version>
 
   <properties>
     <!-- System -->
@@ -56,7 +56,7 @@
     <dependency>
       <groupId>com.avides.springboot.testcontainer</groupId>
       <artifactId>springboot-testcontainer-common</artifactId>
-      <version>0.1.0-RC4</version>
+      <version>0.1.0-RC5</version>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
