@@ -2,8 +2,8 @@ springboot-testcontainer-rabbitmq
 =================================
 
 [![Maven Central](https://img.shields.io/maven-metadata/v/http/central.maven.org/maven2/com/avides/springboot/testcontainer/springboot-testcontainer-rabbitmq/maven-metadata.xml.svg)](https://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22com.avides.springboot.testcontainer%22%20AND%20a%3A%22springboot-testcontainer-rabbitmq%22)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/4d64ab37576249f694bbb42e7d2cab56)](https://www.codacy.com/app/avides-builds/springboot-testcontainer-rabbitmq?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=springboot-testcontainer/springboot-testcontainer-rabbitmq&amp;utm_campaign=Badge_Grade)
-[![Coverage Status](https://coveralls.io/repos/springboot-testcontainer/springboot-testcontainer-rabbitmq/badge.svg)](https://coveralls.io/r/springboot-testcontainer/springboot-testcontainer-rabbitmq)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/4d64ab37576249f694bbb42e7d2cab56)](https://www.codacy.com/app/avides-builds/springboot-testcontainer-rabbitmq)
+[![Codacy Badge](https://api.codacy.com/project/badge/Coverage/4d64ab37576249f694bbb42e7d2cab56)](https://www.codacy.com/app/avides-builds/springboot-testcontainer-rabbitmq)
 [![Build Status](https://travis-ci.org/springboot-testcontainer/springboot-testcontainer-rabbitmq.svg?branch=master)](https://travis-ci.org/springboot-testcontainer/springboot-testcontainer-rabbitmq)
 
 ### Dependency
@@ -11,7 +11,7 @@ springboot-testcontainer-rabbitmq
 <dependency>
 	<groupId>com.avides.springboot.testcontainer</groupId>
 	<artifactId>springboot-testcontainer-rabbitmq</artifactId>
-	<version>0.1.0-RC7</version>
+	<version>0.1.0-RC8</version>
 	<scope>test</scope>
 </dependency>
 ```
@@ -20,7 +20,7 @@ springboot-testcontainer-rabbitmq
 Properties consumed (in `bootstrap.properties`):
 - `embedded.container.rabbitmq.enabled` (default is `true`)
 - `embedded.container.rabbitmq.startup-timeout` (default is `30`)
-- `embedded.container.rabbitmq.docker-image` (default is `rabbitmq:3.7.6-alpine`)
+- `embedded.container.rabbitmq.docker-image` (default is `rabbitmq:3.7.8-alpine`)
 - `embedded.container.rabbitmq.port` (default is `5672`)
 - `embedded.container.rabbitmq.virtual-host` (default is `/`)
 - `embedded.container.rabbitmq.username` (default is `guest`)
