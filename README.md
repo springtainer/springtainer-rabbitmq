@@ -11,7 +11,7 @@ springboot-testcontainer-rabbitmq
 <dependency>
 	<groupId>com.avides.springboot.testcontainer</groupId>
 	<artifactId>springboot-testcontainer-rabbitmq</artifactId>
-	<version>0.1.0-RC8</version>
+	<version>0.1.0-RC9</version>
 	<scope>test</scope>
 </dependency>
 ```
