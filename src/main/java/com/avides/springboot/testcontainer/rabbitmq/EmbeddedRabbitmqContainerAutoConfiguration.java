@@ -3,6 +3,7 @@ package com.avides.springboot.testcontainer.rabbitmq;
 import static com.avides.springboot.testcontainer.rabbitmq.RabbitmqProperties.BEAN_NAME;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -50,6 +51,12 @@ public class EmbeddedRabbitmqContainerAutoConfiguration
             envs.add("RABBITMQ_DEFAULT_PASS=" + properties.getPassword());
             envs.add("RABBITMQ_DEFAULT_VHOST=" + properties.getVirtualHost());
             return envs;
+        }
+
+        @Override
+        protected List<String> getTmpDirectories()
+        {
+            return Collections.singletonList("/var/lib/rabbitmq");
         }
 
         @Override
