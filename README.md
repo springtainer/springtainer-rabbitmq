@@ -3,7 +3,9 @@
 [![Maven Central](https://img.shields.io/maven-metadata/v/http/central.maven.org/maven2/com/avides/springboot/testcontainer/springboot-testcontainer-rabbitmq/maven-metadata.xml.svg)](https://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22com.avides.springboot.testcontainer%22%20AND%20a%3A%22springboot-testcontainer-rabbitmq%22)
 [![Build](https://github.com/springboot-testcontainer/springboot-testcontainer-rabbitmq/workflows/release/badge.svg)](https://github.com/springboot-testcontainer/springboot-testcontainer-rabbitmq/actions)
 [![Nightly build](https://github.com/springboot-testcontainer/springboot-testcontainer-rabbitmq/workflows/nightly/badge.svg)](https://github.com/springboot-testcontainer/springboot-testcontainer-rabbitmq/actions)
-[![Sonarcloud Status](https://sonarcloud.io/api/project_badges/measure?project=springboot-testcontainer_springboot-testcontainer-rabbitmq&metric=alert_status)](https://sonarcloud.io/dashboard?id=springboot-testcontainer_springboot-testcontainer-rabbitmq)
+[![Coverage report](https://sonarcloud.io/api/project_badges/measure?project=springboot-testcontainer_springboot-testcontainer-rabbitmq&metric=coverage)](https://sonarcloud.io/dashboard?id=springboot-testcontainer_springboot-testcontainer-rabbitmq)
+[![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=springboot-testcontainer_springboot-testcontainer-rabbitmq&metric=alert_status)](https://sonarcloud.io/dashboard?id=springboot-testcontainer_springboot-testcontainer-rabbitmq)
+[![Technical dept](https://sonarcloud.io/api/project_badges/measure?project=springboot-testcontainer_springboot-testcontainer-rabbitmq&metric=sqale_index)](https://sonarcloud.io/dashboard?id=springboot-testcontainer_springboot-testcontainer-rabbitmq)
 
 ### Dependency
 ```xml
