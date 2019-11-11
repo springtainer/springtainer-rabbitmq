@@ -17,7 +17,7 @@
 			"name": "embedded.container.rabbitmq.docker-image",
 			"type": "java.lang.String",
 			"description": "Docker-image",
-			"defaultValue": "rabbitmq:3.7.8-alpine"
+			"defaultValue": "rabbitmq:3.8.1-alpine"
 		},
 		{
 			"name": "embedded.container.rabbitmq.port",

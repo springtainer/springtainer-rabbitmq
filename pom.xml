@@ -3,7 +3,7 @@
 
   <groupId>com.avides.springboot.testcontainer</groupId>
   <artifactId>springboot-testcontainer-rabbitmq</artifactId>
-  <version>1.0.0-RC1</version>
+  <version>1.0.0-RC2</version>
 
   <name>springboot-testcontainer-rabbitmq</name>
   <description>RabbitMQ test-container</description>

@@ -13,7 +13,7 @@ public class RabbitmqPropertiesTest
         RabbitmqProperties properties = new RabbitmqProperties();
         assertTrue(properties.isEnabled());
         assertEquals(30, properties.getStartupTimeout());
-        assertEquals("rabbitmq:3.7.8-alpine", properties.getDockerImage());
+        assertEquals("rabbitmq:3.8.1-alpine", properties.getDockerImage());
 
         assertEquals(5672, properties.getPort());
         assertEquals("/", properties.getVirtualHost());
