@@ -1,17 +1,16 @@
-springboot-testcontainer-rabbitmq
-=================================
+# springboot-testcontainer-rabbitmq
 
 [![Maven Central](https://img.shields.io/maven-metadata/v/http/central.maven.org/maven2/com/avides/springboot/testcontainer/springboot-testcontainer-rabbitmq/maven-metadata.xml.svg)](https://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22com.avides.springboot.testcontainer%22%20AND%20a%3A%22springboot-testcontainer-rabbitmq%22)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/4d64ab37576249f694bbb42e7d2cab56)](https://www.codacy.com/app/avides-builds/springboot-testcontainer-rabbitmq)
-[![Codacy Badge](https://api.codacy.com/project/badge/Coverage/4d64ab37576249f694bbb42e7d2cab56)](https://www.codacy.com/app/avides-builds/springboot-testcontainer-rabbitmq)
-[![Build Status](https://travis-ci.org/springboot-testcontainer/springboot-testcontainer-rabbitmq.svg?branch=master)](https://travis-ci.org/springboot-testcontainer/springboot-testcontainer-rabbitmq)
+[![Build](https://github.com/springboot-testcontainer/springboot-testcontainer-rabbitmq/workflows/release/badge.svg)](https://github.com/springboot-testcontainer/springboot-testcontainer-rabbitmq/actions)
+[![Nightly build](https://github.com/springboot-testcontainer/springboot-testcontainer-rabbitmq/workflows/nightly/badge.svg)](https://github.com/springboot-testcontainer/springboot-testcontainer-rabbitmq/actions)
+[![Sonarcloud Status](https://sonarcloud.io/api/project_badges/measure?project=springboot-testcontainer_springboot-testcontainer-rabbitmq&metric=alert_status)](https://sonarcloud.io/dashboard?id=springboot-testcontainer_springboot-testcontainer-rabbitmq)
 
 ### Dependency
 ```xml
 <dependency>
 	<groupId>com.avides.springboot.testcontainer</groupId>
 	<artifactId>springboot-testcontainer-rabbitmq</artifactId>
-	<version>0.1.0-RC11</version>
+	<version>1.0.0-RC1</version>
 	<scope>test</scope>
 </dependency>
 ```
