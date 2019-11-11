@@ -8,6 +8,10 @@
   <name>springboot-testcontainer-rabbitmq</name>
   <description>RabbitMQ test-container</description>
   <url>https://github.com/springboot-testcontainer/springboot-testcontainer-rabbitmq</url>
+  <organization>
+    <name>AVIDES Media AG</name>
+    <url>http://www.avides.com</url>
+  </organization>
   <licenses>
     <license>
       <name>MIT License</name>
