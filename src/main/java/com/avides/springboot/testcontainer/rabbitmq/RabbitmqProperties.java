@@ -26,6 +26,6 @@ public class RabbitmqProperties extends AbstractEmbeddedContainerProperties
 
     public RabbitmqProperties()
     {
-        setDockerImage("rabbitmq:3.7.8-alpine");
+        setDockerImage("rabbitmq:3.8.1-alpine");
     }
 }
