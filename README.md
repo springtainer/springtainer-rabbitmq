@@ -12,7 +12,7 @@
 <dependency>
 	<groupId>com.avides.springboot.testcontainer</groupId>
 	<artifactId>springboot-testcontainer-rabbitmq</artifactId>
-	<version>1.0.0-RC2</version>
+	<version>1.0.0-RC3</version>
 	<scope>test</scope>
 </dependency>
 ```

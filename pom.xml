@@ -3,7 +3,7 @@
 
   <groupId>com.avides.springboot.testcontainer</groupId>
   <artifactId>springboot-testcontainer-rabbitmq</artifactId>
-  <version>1.0.0-RC2</version>
+  <version>1.0.0-RC3</version>
 
   <name>springboot-testcontainer-rabbitmq</name>
   <description>RabbitMQ test-container</description>
@@ -51,7 +51,7 @@
     <maven-failsafe-plugin.version>2.22.1</maven-failsafe-plugin.version>
     <maven-enforcer-plugin.version>3.0.0-M2</maven-enforcer-plugin.version>
     <maven-release-plugin.version>2.5.3</maven-release-plugin.version>
-    <maven-scm-provider-gitexe.version>1.11.1</maven-scm-provider-gitexe.version>
+    <maven-scm-provider-gitexe.version>1.11.2</maven-scm-provider-gitexe.version>
     <exists-maven-plugin.version>0.0.6</exists-maven-plugin.version>
     <github-release-plugin.version>1.4.0</github-release-plugin.version>
     <nexus-staging-maven-plugin.version>1.6.8</nexus-staging-maven-plugin.version>
@@ -59,7 +59,7 @@
     <spring.version>5.2.1.RELEASE</spring.version>
     <spring-boot.version>2.2.1.RELEASE</spring-boot.version>
     <!-- Other -->
-    <springboot-testcontainer-common.version>1.0.0-RC1</springboot-testcontainer-common.version>
+    <springboot-testcontainer-common.version>1.0.0-RC2</springboot-testcontainer-common.version>
   </properties>
 
   <dependencies>
