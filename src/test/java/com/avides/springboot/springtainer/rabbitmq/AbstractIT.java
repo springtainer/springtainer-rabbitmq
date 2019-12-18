@@ -1,4 +1,4 @@
-package com.avides.springboot.testcontainer.rabbitmq;
+package com.avides.springboot.springtainer.rabbitmq;
 
 import org.junit.runner.RunWith;
 import org.springframework.amqp.rabbit.core.RabbitAdmin;

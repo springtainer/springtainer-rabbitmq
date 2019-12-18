@@ -1,4 +1,4 @@
-package com.avides.springboot.testcontainer.rabbitmq;
+package com.avides.springboot.springtainer.rabbitmq;
 
 import static org.junit.Assert.assertEquals;
 
@@ -16,7 +16,7 @@ public class PreventDuplicateContainerStartsIT extends AbstractIT
                 .exec()
                 .stream()
                 .filter(container -> container.getLabels()
-                        .containsKey("TESTCONTAINER_SERVICE") && container.getLabels().get("TESTCONTAINER_SERVICE").equals("rabbitmq"))
+                        .containsKey("SPRINGTAINER_SERVICE") && container.getLabels().get("SPRINGTAINER_SERVICE").equals("rabbitmq"))
                 .count());
     }
 
