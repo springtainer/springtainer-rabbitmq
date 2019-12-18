@@ -1,18 +1,18 @@
-# springboot-testcontainer-rabbitmq
+# springtainer-rabbitmq
 
-[![Maven Central](https://img.shields.io/maven-metadata/v/http/central.maven.org/maven2/com/avides/springboot/testcontainer/springboot-testcontainer-rabbitmq/maven-metadata.xml.svg)](https://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22com.avides.springboot.testcontainer%22%20AND%20a%3A%22springboot-testcontainer-rabbitmq%22)
-[![Build](https://github.com/springboot-testcontainer/springboot-testcontainer-rabbitmq/workflows/release/badge.svg)](https://github.com/springboot-testcontainer/springboot-testcontainer-rabbitmq/actions)
-[![Nightly build](https://github.com/springboot-testcontainer/springboot-testcontainer-rabbitmq/workflows/nightly/badge.svg)](https://github.com/springboot-testcontainer/springboot-testcontainer-rabbitmq/actions)
-[![Coverage report](https://sonarcloud.io/api/project_badges/measure?project=springboot-testcontainer_springboot-testcontainer-rabbitmq&metric=coverage)](https://sonarcloud.io/dashboard?id=springboot-testcontainer_springboot-testcontainer-rabbitmq)
-[![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=springboot-testcontainer_springboot-testcontainer-rabbitmq&metric=alert_status)](https://sonarcloud.io/dashboard?id=springboot-testcontainer_springboot-testcontainer-rabbitmq)
-[![Technical dept](https://sonarcloud.io/api/project_badges/measure?project=springboot-testcontainer_springboot-testcontainer-rabbitmq&metric=sqale_index)](https://sonarcloud.io/dashboard?id=springboot-testcontainer_springboot-testcontainer-rabbitmq)
+[![Maven Central](https://img.shields.io/maven-metadata/v/http/central.maven.org/maven2/com/avides/springboot/springtainer/springtainer-rabbitmq/maven-metadata.xml.svg)](https://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22com.avides.springboot.springtainer%22%20AND%20a%3A%22springtainer-rabbitmq%22)
+[![Build](https://github.com/springtainer/springtainer-rabbitmq/workflows/release/badge.svg)](https://github.com/springtainer/springtainer-rabbitmq/actions)
+[![Nightly build](https://github.com/springtainer/springtainer-rabbitmq/workflows/nightly/badge.svg)](https://github.com/springtainer/springtainer-rabbitmq/actions)
+[![Coverage report](https://sonarcloud.io/api/project_badges/measure?project=springtainer_springtainer-rabbitmq&metric=coverage)](https://sonarcloud.io/dashboard?id=springtainer_springtainer-rabbitmq)
+[![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=springtainer_springtainer-rabbitmq&metric=alert_status)](https://sonarcloud.io/dashboard?id=springtainer_springtainer-rabbitmq)
+[![Technical dept](https://sonarcloud.io/api/project_badges/measure?project=springtainer_springtainer-rabbitmq&metric=sqale_index)](https://sonarcloud.io/dashboard?id=springtainer_springtainer-rabbitmq)
 
 ### Dependency
 ```xml
 <dependency>
-	<groupId>com.avides.springboot.testcontainer</groupId>
-	<artifactId>springboot-testcontainer-rabbitmq</artifactId>
-	<version>1.0.0-RC3</version>
+	<groupId>com.avides.springboot.springtainer</groupId>
+	<artifactId>springtainer-rabbitmq</artifactId>
+	<version>1.0.0</version>
 	<scope>test</scope>
 </dependency>
 ```
@@ -39,14 +39,14 @@ spring.rabbitmq.addresses=${embedded.container.rabbitmq.host}:${embedded.contain
 ## Logging
 To reduce logging insert this into the logback-configuration:
 ```xml
-<!-- Testcontainers -->
+<!-- Springtainer -->
 <logger name="com.github.dockerjava.jaxrs" level="WARN" />
 <logger name="com.github.dockerjava.core.command" level="WARN" />
 <logger name="org.apache.http" level="WARN" />
 ```
 
 ## Labels
-The container exports multiple labels to analyze running testcontainers:
-- `TESTCONTAINER_SERVICE=rabbitmq`
-- `TESTCONTAINER_IMAGE=${embedded.container.rabbitmq.docker-image}`
-- `TESTCONTAINER_STARTED=$currentTimestamp`
+The container exports multiple labels to analyze running springtainers:
+- `SPRINGTAINER_SERVICE=rabbitmq`
+- `SPRINGTAINER_IMAGE=${embedded.container.rabbitmq.docker-image}`
+- `SPRINGTAINER_STARTED=$currentTimestamp`

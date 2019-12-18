@@ -1,4 +1,4 @@
-package com.avides.springboot.testcontainer.rabbitmq;
+package com.avides.springboot.springtainer.rabbitmq;
 
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
