@@ -1,6 +1,6 @@
 # springtainer-rabbitmq
 
-[![Maven Central](https://img.shields.io/maven-metadata/v/http/central.maven.org/maven2/com/avides/springboot/springtainer/springtainer-rabbitmq/maven-metadata.xml.svg)](https://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22com.avides.springboot.springtainer%22%20AND%20a%3A%22springtainer-rabbitmq%22)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.avides.springboot.springtainer/springtainer-rabbitmq/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.avides.springboot.springtainer/springtainer-rabbitmq)
 [![Build](https://github.com/springtainer/springtainer-rabbitmq/workflows/release/badge.svg)](https://github.com/springtainer/springtainer-rabbitmq/actions)
 [![Nightly build](https://github.com/springtainer/springtainer-rabbitmq/workflows/nightly/badge.svg)](https://github.com/springtainer/springtainer-rabbitmq/actions)
 [![Coverage report](https://sonarcloud.io/api/project_badges/measure?project=springtainer_springtainer-rabbitmq&metric=coverage)](https://sonarcloud.io/dashboard?id=springtainer_springtainer-rabbitmq)
@@ -12,7 +12,7 @@
 <dependency>
 	<groupId>com.avides.springboot.springtainer</groupId>
 	<artifactId>springtainer-rabbitmq</artifactId>
-	<version>1.0.0</version>
+	<version>1.1.0</version>
 	<scope>test</scope>
 </dependency>
 ```
