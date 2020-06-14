@@ -1,6 +1,6 @@
 # springtainer-rabbitmq
 
-[![Maven Central](https://img.shields.io/maven-metadata/v/http/central.maven.org/maven2/com/avides/springboot/springtainer/springtainer-rabbitmq/maven-metadata.xml.svg)](https://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22com.avides.springboot.springtainer%22%20AND%20a%3A%22springtainer-rabbitmq%22)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.avides.springboot.springtainer/springtainer-rabbitmq/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.avides.springboot.springtainer/springtainer-rabbitmq)
 [![Build](https://github.com/springtainer/springtainer-rabbitmq/workflows/release/badge.svg)](https://github.com/springtainer/springtainer-rabbitmq/actions)
 [![Nightly build](https://github.com/springtainer/springtainer-rabbitmq/workflows/nightly/badge.svg)](https://github.com/springtainer/springtainer-rabbitmq/actions)
 [![Coverage report](https://sonarcloud.io/api/project_badges/measure?project=springtainer_springtainer-rabbitmq&metric=coverage)](https://sonarcloud.io/dashboard?id=springtainer_springtainer-rabbitmq)
@@ -12,7 +12,7 @@
 <dependency>
 	<groupId>com.avides.springboot.springtainer</groupId>
 	<artifactId>springtainer-rabbitmq</artifactId>
-	<version>1.0.0</version>
+	<version>1.1.0</version>
 	<scope>test</scope>
 </dependency>
 ```
@@ -21,7 +21,7 @@
 Properties consumed (in `bootstrap.properties`):
 - `embedded.container.rabbitmq.enabled` (default is `true`)
 - `embedded.container.rabbitmq.startup-timeout` (default is `30`)
-- `embedded.container.rabbitmq.docker-image` (default is `rabbitmq:3.8.1-alpine`)
+- `embedded.container.rabbitmq.docker-image` (default is `rabbitmq:3.8.4-alpine`)
 - `embedded.container.rabbitmq.port` (default is `5672`)
 - `embedded.container.rabbitmq.virtual-host` (default is `/`)
 - `embedded.container.rabbitmq.username` (default is `guest`)
