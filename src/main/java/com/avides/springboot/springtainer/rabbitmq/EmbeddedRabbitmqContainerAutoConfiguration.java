@@ -36,7 +36,7 @@ public class EmbeddedRabbitmqContainerAutoConfiguration
         return new RabbitmqContainer("rabbitmq", environment, properties);
     }
 
-    public class RabbitmqContainer extends AbstractBuildingEmbeddedContainer<RabbitmqProperties>
+    public static class RabbitmqContainer extends AbstractBuildingEmbeddedContainer<RabbitmqProperties>
     {
         public RabbitmqContainer(String service, ConfigurableEnvironment environment, RabbitmqProperties properties)
         {
