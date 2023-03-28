@@ -3,7 +3,7 @@
 
   <groupId>com.avides.springboot.springtainer</groupId>
   <artifactId>springtainer-rabbitmq</artifactId>
-  <version>1.3.0</version>
+  <version>1.4.0</version>
 
   <name>springtainer-rabbitmq</name>
   <description>RabbitMQ test-container</description>
@@ -23,6 +23,10 @@
     <developer>
       <name>Julian Eggers</name>
       <email>eggers.julian@gmail.com</email>
+    </developer>
+    <developer>
+      <name>Martin Schumacher</name>
+      <email>mail@martin-schumacher.com</email>
     </developer>
   </developers>
 
@@ -47,23 +51,23 @@
     <maven-failsafe-plugin.version>3.0.0-M5</maven-failsafe-plugin.version>
     <maven-enforcer-plugin.version>3.0.0-M3</maven-enforcer-plugin.version>
     <maven-release-plugin.version>3.0.0-M5</maven-release-plugin.version>
-    <maven-scm-provider-gitexe.version>1.11.2</maven-scm-provider-gitexe.version>
+    <maven-scm-provider-gitexe.version>1.11.3</maven-scm-provider-gitexe.version>
     <exists-maven-plugin.version>0.6.0</exists-maven-plugin.version>
     <github-release-plugin.version>1.4.0</github-release-plugin.version>
     <nexus-staging-maven-plugin.version>1.6.8</nexus-staging-maven-plugin.version>
     <!-- Spring -->
-    <spring.version>5.3.15</spring.version>
-    <spring-boot.version>2.6.3</spring-boot.version>
+    <spring.version>5.3.24</spring.version>
+    <spring-boot.version>2.6.14</spring-boot.version>
+    <spring-rabbit.version>2.4.8</spring-rabbit.version>
     <!-- Other -->
-    <lombok.version>1.18.22</lombok.version>
-    <springtainer-common.version>1.3.1</springtainer-common.version>
-    <spring-rabbit.version>2.4.2</spring-rabbit.version>
+    <lombok.version>1.18.26</lombok.version>
+    <slf4j-api.version>1.7.36</slf4j-api.version>
+    <springtainer-common.version>1.4.0</springtainer-common.version>
     <!-- Testing -->
-    <jacoco.version>0.8.7</jacoco.version>
-    <powermock.version>2.0.9</powermock.version>
-    <easymock.version>4.3</easymock.version>
-    <assertj-core.version>3.22.0</assertj-core.version>
-    <logback-classic.version>1.2.10</logback-classic.version>
+    <jacoco.version>0.8.8</jacoco.version>
+    <junit.version>4.13.2</junit.version>
+    <assertj-core.version>3.24.2</assertj-core.version>
+    <logback-classic.version>1.2.11</logback-classic.version>
   </properties>
 
   <dependencies>
@@ -90,6 +94,18 @@
       <artifactId>spring-rabbit</artifactId>
       <version>${spring-rabbit.version}</version>
       <scope>provided</scope>
+      <exclusions>
+        <exclusion>
+          <groupId>org.slf4j</groupId>
+          <artifactId>slf4j-api</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>${slf4j-api.version}</version>
+      <scope>provided</scope>
     </dependency>
 
     <!-- Testing -->
@@ -100,21 +116,9 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.easymock</groupId>
-      <artifactId>easymock</artifactId>
-      <version>${easymock.version}</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.powermock</groupId>
-      <artifactId>powermock-module-junit4</artifactId>
-      <version>${powermock.version}</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.powermock</groupId>
-      <artifactId>powermock-api-easymock</artifactId>
-      <version>${powermock.version}</version>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>${junit.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -140,7 +144,13 @@
       <groupId>ch.qos.logback</groupId>
       <artifactId>logback-classic</artifactId>
       <version>${logback-classic.version}</version>
-      <scope>test</scope>
+      <scope>provided</scope>
+      <exclusions>
+        <exclusion>
+          <groupId>org.slf4j</groupId>
+          <artifactId>slf4j-api</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
   </dependencies>
 

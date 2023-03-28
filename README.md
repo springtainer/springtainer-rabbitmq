@@ -14,7 +14,7 @@
 <dependency>
   <groupId>com.avides.springboot.springtainer</groupId>
   <artifactId>springtainer-rabbitmq</artifactId>
-  <version>1.3.0</version>
+  <version>1.4.0</version>
   <scope>test</scope>
 </dependency>
 ```
@@ -25,7 +25,7 @@ Properties consumed (in `bootstrap.properties`):
 
 - `embedded.container.rabbitmq.enabled` (default is `true`)
 - `embedded.container.rabbitmq.startup-timeout` (default is `30`)
-- `embedded.container.rabbitmq.docker-image` (default is `rabbitmq:3.9.13-alpine`)
+- `embedded.container.rabbitmq.docker-image` (default is `rabbitmq:3.11.10-alpine`)
 - `embedded.container.rabbitmq.port` (default is `5672`)
 - `embedded.container.rabbitmq.virtual-host` (default is `/`)
 - `embedded.container.rabbitmq.username` (default is `guest`)
