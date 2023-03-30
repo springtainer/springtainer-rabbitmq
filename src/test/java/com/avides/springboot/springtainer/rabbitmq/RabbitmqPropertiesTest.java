@@ -10,10 +10,10 @@ public class RabbitmqPropertiesTest
     @Test
     public void testDefaults()
     {
-        RabbitmqProperties properties = new RabbitmqProperties();
+        var properties = new RabbitmqProperties();
         assertTrue(properties.isEnabled());
         assertEquals(30, properties.getStartupTimeout());
-        assertEquals("rabbitmq:3.9.13-alpine", properties.getDockerImage());
+        assertEquals("rabbitmq:3.11.10-alpine", properties.getDockerImage());
 
         assertEquals(5672, properties.getPort());
         assertEquals("/", properties.getVirtualHost());
