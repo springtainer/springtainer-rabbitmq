@@ -60,9 +60,9 @@
     <spring-boot.version>3.5.16</spring-boot.version>
     <spring-rabbit.version>3.2.12</spring-rabbit.version>
     <!-- Other -->
+    <springtainer-common.version>2.0.8</springtainer-common.version>
     <lombok.version>1.18.46</lombok.version>
     <slf4j-api.version>2.0.18</slf4j-api.version>
-    <springtainer-common.version>2.0.8</springtainer-common.version>
     <!-- Testing -->
     <jacoco.version>0.8.15</jacoco.version>
     <junit-jupiter.version>5.12.2</junit-jupiter.version>
@@ -195,10 +195,6 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
         <version>${maven-javadoc-plugin.version}</version>
-        <configuration>
-          <!-- Fix for https://bugs.openjdk.java.net/browse/JDK-8212233 -->
-          <failOnError>false</failOnError>
-        </configuration>
         <executions>
           <execution>
             <id>attach-javadocs</id>
@@ -220,7 +216,7 @@
               <goal>sign</goal>
             </goals>
             <configuration>
-              <!-- Hopefully fixed in version 1.7 ? (https://issues.apache.org/jira/browse/MGPG-59) -->
+              <!-- Needed for non-interactive signing; gpg would otherwise try an interactive pinentry prompt and fail in headless build environments -->
               <gpgArguments>
                 <arg>--pinentry-mode</arg>
                 <arg>loopback</arg>
