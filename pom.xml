@@ -3,7 +3,7 @@
 
   <groupId>com.avides.springboot.springtainer</groupId>
   <artifactId>springtainer-rabbitmq</artifactId>
-  <version>2.1.1</version>
+  <version>2.1.2</version>
 
   <name>springtainer-rabbitmq</name>
   <description>RabbitMQ test-container</description>
@@ -57,7 +57,7 @@
     <!-- Common -->
     <spring.version>6.2.19</spring.version>
     <spring-boot.version>3.5.16</spring-boot.version>
-    <springtainer-common.version>2.1.1</springtainer-common.version>
+    <springtainer-common.version>2.1.2</springtainer-common.version>
     <lombok.version>1.18.46</lombok.version>
     <slf4j-api.version>2.0.18</slf4j-api.version>
     <!-- Other -->
@@ -72,9 +72,9 @@
   <dependencies>
     <!-- Common -->
     <dependency>
-      <groupId>org.projectlombok</groupId>
-      <artifactId>lombok</artifactId>
-      <version>${lombok.version}</version>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-autoconfigure</artifactId>
+      <version>${spring-boot.version}</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
@@ -83,11 +83,19 @@
       <version>${springtainer-common.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-autoconfigure</artifactId>
-      <version>${spring-boot.version}</version>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>${lombok.version}</version>
       <scope>provided</scope>
     </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>${slf4j-api.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    
+    <!-- Other -->
     <dependency>
       <groupId>org.springframework.amqp</groupId>
       <artifactId>spring-rabbit</artifactId>
@@ -99,12 +107,6 @@
           <artifactId>slf4j-api</artifactId>
         </exclusion>
       </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-api</artifactId>
-      <version>${slf4j-api.version}</version>
-      <scope>provided</scope>
     </dependency>
 
     <!-- Testing -->
@@ -152,13 +154,6 @@
       </exclusions>
     </dependency>
   </dependencies>
-
-  <repositories>
-    <repository>
-      <id>sonatype-oss</id>
-      <url>https://oss.sonatype.org/content/repositories/releases</url>
-    </repository>
-  </repositories>
 
   <build>
     <plugins>
