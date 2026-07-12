@@ -8,8 +8,8 @@ import org.springframework.core.env.ConfigurableEnvironment;
 import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
-import com.github.dockerjava.api.DockerClient;
 import com.avides.springboot.springtainer.common.util.DockerClients;
+import com.github.dockerjava.api.DockerClient;
 
 @ExtendWith(SpringExtension.class)
 @SpringBootTest(properties = { "spring.rabbitmq.addresses=${embedded.container.rabbitmq.host}:${embedded.container.rabbitmq.port}" })
