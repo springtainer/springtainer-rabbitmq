@@ -1,11 +1,10 @@
 # springtainer-rabbitmq
 
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.avides.springboot.springtainer/springtainer-rabbitmq/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.avides.springboot.springtainer/springtainer-rabbitmq)
-[![Build](https://github.com/springtainer/springtainer-rabbitmq/workflows/release/badge.svg)](https://github.com/springtainer/springtainer-rabbitmq/actions)
-[![Nightly build](https://github.com/springtainer/springtainer-rabbitmq/workflows/nightly/badge.svg)](https://github.com/springtainer/springtainer-rabbitmq/actions)
-[![Coverage report](https://sonarcloud.io/api/project_badges/measure?project=springtainer_springtainer-rabbitmq&metric=coverage)](https://sonarcloud.io/dashboard?id=springtainer_springtainer-rabbitmq)
-[![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=springtainer_springtainer-rabbitmq&metric=alert_status)](https://sonarcloud.io/dashboard?id=springtainer_springtainer-rabbitmq)
-[![Technical dept](https://sonarcloud.io/api/project_badges/measure?project=springtainer_springtainer-rabbitmq&metric=sqale_index)](https://sonarcloud.io/dashboard?id=springtainer_springtainer-rabbitmq)
+[![Maven Central](https://img.shields.io/maven-central/v/com.avides.springboot.springtainer/springtainer-rabbitmq.svg?label=maven-central)](https://search.maven.org/artifact/com.avides.springboot.springtainer/springtainer-rabbitmq)
+[![Release](https://github.com/springtainer/springtainer-rabbitmq/actions/workflows/release.yml/badge.svg)](https://github.com/springtainer/springtainer-rabbitmq/actions/workflows/release.yml)
+[![Nightly build](https://github.com/springtainer/springtainer-rabbitmq/actions/workflows/nightly.yml/badge.svg)](https://github.com/springtainer/springtainer-rabbitmq/actions/workflows/nightly.yml)
+[![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=springtainer_springtainer-rabbitmq&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=springtainer_springtainer-rabbitmq)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=springtainer_springtainer-rabbitmq&metric=coverage)](https://sonarcloud.io/summary/new_code?id=springtainer_springtainer-rabbitmq)
 
 ### Dependency
 
