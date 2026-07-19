@@ -9,11 +9,10 @@
 ### Dependency
 
 ```xml
-
 <dependency>
   <groupId>com.avides.springboot.springtainer</groupId>
   <artifactId>springtainer-rabbitmq</artifactId>
-  <version>2.0.0-RC1</version>
+  <version>2.0.0-RC2</version>
   <scope>test</scope>
 </dependency>
 ```
@@ -24,7 +23,7 @@ Properties consumed (in `bootstrap.properties`):
 
 - `embedded.container.rabbitmq.enabled` (default is `true`)
 - `embedded.container.rabbitmq.startup-timeout` (default is `30`)
-- `embedded.container.rabbitmq.docker-image` (default is `rabbitmq:3.11.10-alpine`)
+- `embedded.container.rabbitmq.docker-image` (default is `rabbitmq:3.13.7-alpine`)
 - `embedded.container.rabbitmq.port` (default is `5672`)
 - `embedded.container.rabbitmq.virtual-host` (default is `/`)
 - `embedded.container.rabbitmq.username` (default is `guest`)
@@ -41,15 +40,25 @@ Example for minimal configuration in `application-it.properties`:
 spring.rabbitmq.addresses=${embedded.container.rabbitmq.host}:${embedded.container.rabbitmq.port}
 ```
 
+## Spring's test-context cache is bounded automatically
+
+`spring.test.context.cache.maxSize=1` ships as a classpath `spring.properties`
+resource inside springtainer-common itself, so it's picked up automatically for every consumer - no configuration
+needed on your side. This bounds Spring's test-context cache so a no-longer-current context (and, via its
+`ContextClosedEvent` listener, its embedded container) gets evicted and cleanly closed as soon as a differently-configured
+context needs the slot, instead of piling up unclosed until the whole JVM exits.
+
+This works the same way whether tests are launched via Maven Surefire/Failsafe or directly from an IDE's own test
+runner (e.g. Eclipse), since Spring resolves it from the classpath (`org.springframework.core.SpringProperties`) rather
+than from a JVM system property.
+
 ## Logging
 
 To reduce logging insert this into the logback-configuration:
 
 ```xml
 <!-- Springtainer -->
-<logger name="com.github.dockerjava.jaxrs" level="WARN" />
-<logger name="com.github.dockerjava.core.command" level="WARN" />
-<logger name="org.apache.http" level="WARN" />
+<logger name="com.github.dockerjava" level="WARN" />
 ```
 
 ## Labels
