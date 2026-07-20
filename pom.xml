@@ -3,7 +3,7 @@
 
   <groupId>com.avides.springboot.springtainer</groupId>
   <artifactId>springtainer-rabbitmq</artifactId>
-  <version>2.0.0-RC2</version>
+  <version>2.0.0-RC3</version>
 
   <name>springtainer-rabbitmq</name>
   <description>RabbitMQ test-container</description>
@@ -54,7 +54,7 @@
     <central-publishing-maven-plugin.version>0.11.0</central-publishing-maven-plugin.version>
     <!-- Common -->
     <spring-boot.version>3.5.16</spring-boot.version>
-    <springtainer-common.version>2.0.0-RC4</springtainer-common.version>
+    <springtainer-common.version>2.0.0-RC5</springtainer-common.version>
     <!-- lombok must be pinned explicitly for the annotation-processor path; kept in sync with the Spring Boot BOM -->
     <lombok.version>1.18.46</lombok.version>
     <!-- Testing -->
