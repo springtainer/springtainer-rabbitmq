@@ -1,9 +1,9 @@
 package com.avides.springboot.springtainer.rabbitmq;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class RabbitmqPropertiesTest
 {
@@ -13,7 +13,7 @@ public class RabbitmqPropertiesTest
         var properties = new RabbitmqProperties();
         assertTrue(properties.isEnabled());
         assertEquals(30, properties.getStartupTimeout());
-        assertEquals("rabbitmq:3.11.10-alpine", properties.getDockerImage());
+        assertEquals("rabbitmq:3.13.7-alpine", properties.getDockerImage());
 
         assertEquals(5672, properties.getPort());
         assertEquals("/", properties.getVirtualHost());
