@@ -17,13 +17,19 @@
 			"name": "embedded.container.rabbitmq.docker-image",
 			"type": "java.lang.String",
 			"description": "Docker-image",
-			"defaultValue": "rabbitmq:3.13.7-alpine"
+			"defaultValue": "rabbitmq:4.3.4-management-alpine"
 		},
 		{
 			"name": "embedded.container.rabbitmq.port",
 			"description": "AMQP-Port",
 			"type": "java.lang.Integer",
 			"defaultValue": "5672"
+		},
+		{
+			"name": "embedded.container.rabbitmq.management-port",
+			"description": "Management-API-Port",
+			"type": "java.lang.Integer",
+			"defaultValue": "15672"
 		},
 		{
 			"name": "embedded.container.rabbitmq.virtual-host",

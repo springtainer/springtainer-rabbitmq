@@ -65,6 +65,7 @@ public class EmbeddedRabbitmqContainerAutoConfiguration
             Map<String, Object> provided = new HashMap<>();
             provided.put("embedded.container.rabbitmq.host", getContainerHost());
             provided.put("embedded.container.rabbitmq.port", Integer.valueOf(getContainerPort(properties.getPort())));
+            provided.put("embedded.container.rabbitmq.management-port", Integer.valueOf(getContainerPort(properties.getManagementPort())));
             return provided;
         }
 
