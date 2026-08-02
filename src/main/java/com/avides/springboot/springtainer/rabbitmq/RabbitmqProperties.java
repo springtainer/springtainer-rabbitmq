@@ -18,6 +18,8 @@ public class RabbitmqProperties extends AbstractEmbeddedContainerProperties
 
     private int port = 5672;
 
+    private int managementPort = 15672;
+
     private String virtualHost = "/";
 
     private String username = "guest";
@@ -26,6 +28,6 @@ public class RabbitmqProperties extends AbstractEmbeddedContainerProperties
 
     public RabbitmqProperties()
     {
-        setDockerImage("rabbitmq:3.13.7-alpine");
+        setDockerImage("rabbitmq:4.3.4-management-alpine");
     }
 }

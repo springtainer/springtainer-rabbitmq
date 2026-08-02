@@ -1,7 +1,7 @@
 package com.avides.springboot.springtainer.rabbitmq;
 
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.springframework.amqp.rabbit.core.RabbitAdmin;
+import org.springframework.amqp.core.AmqpAdmin;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.core.env.ConfigurableEnvironment;
@@ -22,5 +22,5 @@ public abstract class AbstractIT
     protected ConfigurableEnvironment environment;
 
     @Autowired
-    protected RabbitAdmin rabbitAdmin;
+    protected AmqpAdmin rabbitAdmin;
 }
